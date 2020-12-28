@@ -5,18 +5,21 @@ function App() {
   return (
     <div className="App">
       {/* Header is used to define headings, a page can have many headers, A header cannot be inside footer */}
+      {/* block level element occupies all the space available */}
       <header className="App-header">
+
         <h1>This is a header tag</h1>
       </header>
       <header>
         <nav>
+          {/* Inline element occupies the space or content */}
           <a href="#1">HTML</a>
           <a href="#2">React</a>
         </nav>
       </header>
       <main>
         Used for main content of the body
-    <article>
+    {/* <article>
           Used for independent cintent
       </article>
       <section>
@@ -29,12 +32,86 @@ function App() {
         <details>
           <summary>Click here to collapse</summary>
           <p>Collapsible content</p>
-        </details>
+        </details> */}
+        {/* ------------------Lists-------------------------*/}
+        <ul>
+          {/* li is  a block level element */}
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+        <ol>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ol>
+        <dl>
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+        </dl>
+        {/* -------------Tables---------------------- */}
+        <table style={{float:'right'}}>
+          <tr>
+            <th>Name</th>
+            <th>Savings</th>
+          </tr>
+          <tr>
+            <td>Sai</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Pavan</td>
+            <td>$80</td>
+          </tr>
+        </table>
+        <table className='center'>
+        <caption>Monthly savings</caption>
+          <tr>
+            <th>Name</th>
+            <th>Savings</th>
+          </tr>
+          <tr>
+            <td>Sai</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Pavan</td>
+            <td>$80</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Phone</th>
+            <th>Test for rowspan</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>123-45-678</td>
+            <td>212-00-546</td>
+            <td rowspan="2">123456</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>123-45-678</td>
+            <td>212-00-546</td>
+          </tr>
+        </table>
+        {/* -------------------------Attributes-------------------------------- */}
+        <a href="#1" target="_blank">link</a>
+        <img src="#1" alt='test' height="40" width="24"></img>
+        <p style={{color:"red"}}>Attributes</p>
+        <p title="I am a tooltip">Tooltip</p>
       </main>
 
-      <footer>
+      {/* <footer>
         This is a footer tag
-      </footer>
+      </footer> */}
     </div>
   );
 }
