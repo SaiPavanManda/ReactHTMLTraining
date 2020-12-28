@@ -4,20 +4,37 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* Header is used to define headings, a page can have many headers, A header cannot be inside footer */}
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>This is a header tag</h1>
       </header>
+      <header>
+        <nav>
+          <a href="#1">HTML</a>
+          <a href="#2">React</a>
+        </nav>
+      </header>
+      <main>
+        Used for main content of the body
+    <article>
+          Used for independent cintent
+      </article>
+      <section>
+        <h1>Section title</h1>
+        <p>Section content here........</p>
+      </section>
+        <aside>
+          Used for content to be on the sides
+      </aside>
+        <details>
+          <summary>Click here to collapse</summary>
+          <p>Collapsible content</p>
+        </details>
+      </main>
+
+      <footer>
+        This is a footer tag
+      </footer>
     </div>
   );
 }
