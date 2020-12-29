@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,13 +7,13 @@ function App() {
       {/* block level element occupies all the space available */}
       <header className="App-header">
 
-        <h1>This is a header tag</h1>
+        <h1 id="headerId">This is a header tag</h1>
       </header>
       <header>
         <nav>
           {/* Inline element occupies the space or content */}
           <a href="#1">HTML</a>
-          <a href="#2">React</a>
+          <a href="#2" target="_blank" class="link">React</a>
         </nav>
       </header>
       <main>
@@ -52,7 +51,7 @@ function App() {
           <dd>- white cold drink</dd>
         </dl>
         {/* -------------Tables---------------------- */}
-        <table style={{float:'right'}}>
+        <table style={{ float: 'right' }}>
           <tr>
             <th>Name</th>
             <th>Savings</th>
@@ -67,7 +66,7 @@ function App() {
           </tr>
         </table>
         <table className='center'>
-        <caption>Monthly savings</caption>
+          <caption>Monthly savings</caption>
           <tr>
             <th>Name</th>
             <th>Savings</th>
@@ -105,11 +104,22 @@ function App() {
         {/* -------------------------Attributes-------------------------------- */}
         <a href="#1" target="_blank">link</a>
         <img src="#1" alt='test' height="40" width="24"></img>
-        <p style={{color:"red"}}>Attributes</p>
+        <p>Attributes</p>
         <p title="I am a tooltip">Tooltip</p>
+        <div className="classSelector" title="attributeTitle">
+          <p>Class selector</p>
+        </div>
+        <div class="first_test">The test element</div>
+
+
+        <form name="input" action="" method="get">
+          Firstname:<input type="text" name="Name" value="Peter" size="20" />
+            Lastname:<input type="text" name="Name" value="Griffin" size="20" />
+              <input type="button" value="Example Button" />
+        </form>
       </main>
 
-      {/* <footer>
+            {/* <footer>
         This is a footer tag
       </footer> */}
     </div>

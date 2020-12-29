@@ -1,41 +1,4 @@
- /* .App {
-  text-align: center;
-} */
 
-/* App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 aside{
   float: right;
@@ -49,11 +12,53 @@ footer{
 a{
   padding: 5px
 }
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* -------selectors------------------- */
+p {
+  color: red;
+}
+
+#headerId {
+  color: green;
+}
+.classSelector {
+  color:blue;
+  background:yellow;
+  width:200px;
+  height:200px;
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse:collapse
 }
-table.center {
-  margin-left: auto;
-  margin-right: auto;
+
+a[target="_blank"] {
+  background:yellow;
+}
+
+[title~="attributeTitle"] {
+  border: 2px solid green
+}
+
+[class |= "link"] {
+  color: green
+}
+[class $= "test"] {
+  background: yellow;
+}
+
+[method ~='get'] {
+  background: green;
+}
+
+input[type^='text'] {
+  background: yellow;
+}
+
+input[type='button'] {
+  background: cyan;
 }
