@@ -15,6 +15,7 @@ a{
 table.center {
   margin-left: auto;
   margin-right: auto;
+  clear:right;
 }
 /* -------selectors------------------- */
 p {
@@ -47,9 +48,10 @@ a[target="_blank"] {
 [class |= "link"] {
   color: green
 }
-[class $= "test"] {
+
+/* [class $= "test"] {
   background: yellow;
-}
+} */
 
 [method ~='get'] {
   background: green;
@@ -61,4 +63,64 @@ input[type^='text'] {
 
 input[type='button'] {
   background: cyan;
+}
+
+/* ---------backgrounds-----------------------> */
+
+.first_test {
+  background-color:rgba(0, 128, 0, 0.3);
+  /* opacity:0.3 */
+
+  max-height: 100px;
+  max-width: 200px;
+  height: 120px;
+  width: 180pxpx;
+  width: 180px;
+  overflow: auto;
+}
+
+/* li {
+  display: inline;
+} */
+
+.blockElement {
+  display: block;
+  background:yellow
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px; 
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fixedDiv{
+  bottom: 0;
+  position: fixed;
+  float: right;
+  background: lightblue;
+  border: 2px solid green;
+  right: 0
+}
+
+.ellipsisFont {
+  white-space: nowrap;
+  width: 200px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size: 18px;
+  color:green;
+  font-weight: bold;
 }

@@ -109,7 +109,18 @@ function App() {
         <div className="classSelector" title="attributeTitle">
           <p>Class selector</p>
         </div>
-        <div class="first_test">The test element</div>
+        <div class="first_test">
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+          <p>The test element</p>
+        </div>
 
 
         <form name="input" action="" method="get">
@@ -117,6 +128,27 @@ function App() {
             Lastname:<input type="text" name="Name" value="Griffin" size="20" />
               <input type="button" value="Example Button" />
         </form>
+       
+        <ul>
+          <li><a href="#1">HTML</a></li>
+          <li><a href="#2" target="_blank" class="link">Making li to inline</a></li>
+        </ul>
+        <span className="blockElement">making span to block</span>
+
+        <div class="dropdown">
+            <span>Dropdown</span>
+            <div class="dropdown-content">
+                 <p>1</p>
+                 <p>2</p>
+                 <p>3</p>
+            </div>
+        </div>
+
+        <div className="fixedDiv">
+          <p>This is fixed div</p>
+        </div>
+
+        <p className="ellipsisFont">This is the text that we want to add elipisis for</p>
       </main>
 
             {/* <footer>
