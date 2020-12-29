@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+
+
+aside{
+  float: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+  bottom: 0;
+  position: absolute;
+  color: red
+}
+a{
+  padding: 5px
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* -------selectors------------------- */
+p {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headerId {
+  color: green;
+}
+.classSelector {
+  color:blue;
+  background:yellow;
+  width:200px;
+  height:200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table, th, td {
+  border: 1px solid black;
+  border-collapse:collapse
 }
 
-.App-link {
-  color: #61dafb;
+a[target="_blank"] {
+  background:yellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+[title~="attributeTitle"] {
+  border: 2px solid green
+}
+
+[class |= "link"] {
+  color: green
+}
+[class $= "test"] {
+  background: yellow;
+}
+
+[method ~='get'] {
+  background: green;
+}
+
+input[type^='text'] {
+  background: yellow;
+}
+
+input[type='button'] {
+  background: cyan;
 }
