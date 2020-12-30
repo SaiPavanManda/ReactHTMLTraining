@@ -126,9 +126,9 @@ function App() {
         <form name="input" action="" method="get">
           Firstname:<input type="text" name="Name" value="Peter" size="20" />
             Lastname:<input type="text" name="Name" value="Griffin" size="20" />
-              <input type="button" value="Example Button" />
+          <input type="button" value="Example Button" />
         </form>
-       
+
         <ul>
           <li><a href="#1">HTML</a></li>
           <li><a href="#2" target="_blank" class="link">Making li to inline</a></li>
@@ -136,12 +136,12 @@ function App() {
         <span className="blockElement">making span to block</span>
 
         <div class="dropdown">
-            <span>Dropdown</span>
-            <div class="dropdown-content">
-                 <p>1</p>
-                 <p>2</p>
-                 <p>3</p>
-            </div>
+          <span>Dropdown</span>
+          <div class="dropdown-content">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
         </div>
 
         <div className="fixedDiv">
@@ -151,9 +151,18 @@ function App() {
         <p className="ellipsisFont">This is the text that we want to add elipisis for</p>
       </main>
 
-            {/* <footer>
+      {/* <footer>
         This is a footer tag
       </footer> */}
+
+      <div class="flex-container">
+        <div class="item-1">div</div>
+        <div class="item-2">w=250px</div>
+        <div class="item-3">h=250px</div>
+        <div class="item-4">w/h=300px</div>
+        <div class="item-5">w=350px</div>
+        <div class="item-6">w=350px</div>
+      </div>
     </div>
   );
 }
