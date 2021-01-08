@@ -1,6 +1,9 @@
 import './App.css';
 import Card from './components/card';
 import styled, { ThemeProvider } from 'styled-components';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -241,7 +244,7 @@ function App() {
           
       </div> */}
       {/* <div className="cards-container">{[1,2,3,4,5,6].map(value =>  (<Card key={value} />))}</div> */}
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}>
       <Wrapper>
         <Title >
           Hello World!
@@ -259,17 +262,22 @@ function App() {
         </Title>
       </ThemeProvider>
       
-    </ThemeProvider>
+    </ThemeProvider> */}
 
 
-    <Navbar>
+    {/* <Navbar>
       <Logo />
       <NavItems>
         <NavItem>Link 1</NavItem>
         <NavItem>Link 2</NavItem>
         <NavItem>Link 3</NavItem>
       </NavItems>
-    </Navbar>
+    </Navbar> */}
+
+    <Header />
+    <Banner />
+    <div className="cards-container">{[1,2,3,4,5,6].map(value =>  (<Card key={value} />))}</div>
+    <Footer />
     </div>
     
   );

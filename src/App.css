@@ -6,11 +6,6 @@ aside{
   float: right;
 }
 
-footer{
-  bottom: 0;
-  position: absolute;
-  color: red
-}
 a{
   padding: 5px
 }

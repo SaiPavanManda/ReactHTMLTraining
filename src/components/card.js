@@ -12,7 +12,7 @@ const Card = () => {
     return (
         <div className="card-wrapper">
         <div className="card">
-            <div className="image-container">
+            <div className="banner-container">
                 <img src={card1} alt="card1"></img>
             </div>
             <div className="card-content">

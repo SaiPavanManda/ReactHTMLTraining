@@ -1,0 +1,46 @@
+.footer-wrapper {
+    display: flex;
+    background-color: #239BDD;
+}
+
+.footer-img {
+    width: 45%;
+}
+
+.footer-img  img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content  {
+    display: flex;
+    flex-grow: 1;
+    color: #fff;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.details {
+    display: flex;
+}
+
+.email {
+    margin-left: 20px
+}
+
+.left-content {
+    font-size: 16px;
+    width: 35%;
+}
+
+.right-content {
+    width: 35%;
+}
+
+/* .title {
+    font-size: 16px;
+
+} */
+/* .left-content {
+    padding: 
+} */

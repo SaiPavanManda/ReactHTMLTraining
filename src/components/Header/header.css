@@ -1,0 +1,24 @@
+.header-container {
+    max-width: 1480px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 175px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+
+.list-item {
+    display: inline-block;
+    color:#239BDD;
+    padding: 10px
+}
